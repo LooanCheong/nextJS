@@ -5,11 +5,14 @@ export default function NavBar() {
   const router = useRouter();
   return (
     <nav>
-      <Link href="/">
-        <a className={router.pathname === "/" ? "active" : ""}>Home</a>
+      <Link href="/" className={router.pathname === "/" ? "active" : ""}>
+        Home
       </Link>
-      <Link href="/about">
-        <a className={router.pathname === "/about" ? "active" : ""}>About</a>
+      <Link
+        href="/about"
+        className={router.pathname === "/about" ? "active" : ""}
+      >
+        About
       </Link>
       <style jsx>{`
         a {
